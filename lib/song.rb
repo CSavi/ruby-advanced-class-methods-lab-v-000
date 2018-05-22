@@ -45,8 +45,7 @@ class Song
   
   def self.new_from_filename(file_name)
     s = self.new 
-    s.name = file_name
-    self.filename.split("-").slice!(".mp3").join(" ")
+    s.name = file_name.split("-").slice!(".mp3").join(" ")
   end 
   
   
